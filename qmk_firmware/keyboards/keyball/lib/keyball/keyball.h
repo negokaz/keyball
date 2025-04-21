@@ -13,6 +13,9 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Modifications 2025 by Nobuki Inoue (your @black_trooper)
+- Added support for PMW3610
 */
 
 #pragma once
@@ -21,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Configurations
 
 #ifndef KEYBALL_CPI_DEFAULT
-#    define KEYBALL_CPI_DEFAULT 500
+#    define KEYBALL_CPI_DEFAULT 600
 #endif
 
 #ifndef KEYBALL_SCROLL_DIV_DEFAULT
