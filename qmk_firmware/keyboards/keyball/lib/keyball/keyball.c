@@ -204,7 +204,7 @@ static void adjust_mouse_speed(report_mouse_t *r) {
 
 __attribute__((weak)) void keyball_on_apply_motion_to_mouse_move(keyball_motion_t *m, report_mouse_t *r, bool is_left) {
 #if KEYBALL_MODEL == 61 || KEYBALL_MODEL == 39 || KEYBALL_MODEL == 147 || KEYBALL_MODEL == 44
-    r->x = - clip2int8(m->x);
+    r->x = -clip2int8(m->x);
     r->y = clip2int8(m->y);
     if (is_left) {
         r->x = -r->x;
@@ -230,8 +230,8 @@ __attribute__((weak)) void keyball_on_apply_motion_to_mouse_scroll(keyball_motio
 
     // apply to mouse report.
 #if KEYBALL_MODEL == 61 || KEYBALL_MODEL == 39 || KEYBALL_MODEL == 147 || KEYBALL_MODEL == 44
-    r->h = clip2int8(y);
-    r->v = -clip2int8(x);
+    r->h = -clip2int8(x);
+    r->v = -clip2int8(y);
     if (is_left) {
         r->h = -r->h;
         r->v = -r->v;
